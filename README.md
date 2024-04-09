@@ -48,6 +48,8 @@ Technologies used:
 
 • Deployment: Azure
 
+• Design: Figma
+
 ## Getting started
   1. Clone the repository: 
 
@@ -104,7 +106,7 @@ Week 2:
 - Implement feature: Create Boards
 - Configure Continuous Integration/Continuous Delivery pipeline
 - Write unit tests for user registration functionality
-- Document project tasks decomposition ✔️
+- Document project tasks decomposition ✔️(?)
 - Review and finalize architecture diagram
 
 Week 3:
