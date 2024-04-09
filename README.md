@@ -48,6 +48,37 @@ Technologies used:
 
 • Deployment: Azure
 
+## Getting 
+  1. Clone the repository: 
+
+```git clone https://github.com/yourusername/inspira.git```
+
+  2. Navigate to the project directory:
+
+```cd inspira```
+
+  3. Create and activate a virtual environment (optional but recommended):
+
+```python3 -m venv env          # Create a virtual environment```
+```source env/bin/activate      # Activate the virtual environment```
+
+  4. Install Django and other dependencies:
+
+```pip install -r requirements.txt```
+
+  5. Run database migrations:
+
+```python manage.py migrate```
+
+  6. Create a superuser (admin account) (optional):
+
+```python manage.py createsuperuser```
+
+  7. Start the development server:
+
+```python manage.py runserver```
+
+  Now you should be able to access the Inspira web app at http://localhost:8000 in your browser.
 
 
 ## Contacts
@@ -57,6 +88,5 @@ For any inquiries or feedback, feel free to contact the author (Victoria Yatsiuk
 
 • E-mail: privateaccvictoria@gmail.com
 
-## Technologies Used
 
 
