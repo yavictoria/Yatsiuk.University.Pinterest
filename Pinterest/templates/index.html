@@ -17,7 +17,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ffefef;
+            background-color: #ffdbdb;
         }
 
         .main {
@@ -25,63 +25,80 @@
             padding: 20px;
             background-color: #ffefef;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 10px rgba(147, 0, 0, 0.1);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
         }
 
         /* Login and Register Buttons */
         .btn {
-            display: block;
-            
+
             width: 300px;
             padding: 12px 20px;
             margin-bottom: 15px;
+            margin-left: 30px;
+            display: inline-block;
+            justify-content: center; /* Вирівнюємо вміст по горизонталі */
+            text-align: center;
             font-size: 16px;
             font-weight: bold;
             text-decoration: none;
+            color: white;
+
             border-radius: 20px;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .btn-outline-info {
-            color: #ffb8cd;
-            border-color: #ffb8cd;
-            background-color: #ffb8cd;
+            background: linear-gradient(to right, #ffd0e4, #ff9a9d);
+            border: 0px;
+            color: white;
+            cursor: pointer;
+            transition: backgorund 2s ease;
+
         }
 
         .btn-outline-info:hover {
-            background-color: #ff94ad;
-
+            background: linear-gradient(to right, #ffa7d5, #ff9194);
         }
 
         .btn i {
             margin-right: 10px;
+            color: white;
         }
 
         /* Inspira Logo and Tagline */
         .inspira-logo {
-            display: block;
+            display: inline-block;
             
-            width: 800px;
-            height: 500px;
-            margin-bottom: 30px;
+            width: 500px;
+            height: 300px;
+            margin-bottom: 60px;
+            margin-left: 30px;
         }
 
         .inspira-tagline {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #b07a7a;
+            
         }
     </style>
 </head>
 <body>
     <div class="main">
-        <img src="{% static "inspira_logo.png" %}" alt="" class="inspira-logo" width="824" height="505">
-        <p class="inspira-tagline">Your personal inspiration tool</p>
+        <img src="{% static 'inspira_logo.png' %}" alt="" class="inspira-logo">
+
         <button class="btn btn-outline-info">
             <a href="{% provider_login_url 'google'%}">
                 <i class="fab fa-google"></i>Login with Google
             </a>
         </button>
+        <p class="inspira-tagline">First time here?</p>
         <button class="btn btn-outline-info">
             <a href="{% url 'register' %}">Register</a>
         </button>

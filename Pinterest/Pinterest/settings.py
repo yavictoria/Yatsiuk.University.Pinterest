@@ -10,7 +10,29 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+import sys
 from pathlib import Path
+import environ
+
+# environ.Env.DB_SCHEMES['mssql'] = 'mssql'
+# env = environ.Env(DEBUG=(bool, False))
+# DEFULT_DATABASE_URL = "mssql://<username>:<password>@<host>/<database_name>?driver=ODBC+Driver+17+for+SQL+Server"
+#
+# DATABASE_URL = os.environ.get('DATABASE_URL', DEFULT_DATABASE_URL)
+# os.environ['DJANGO_DATABASE_URL'] = DATABASE_URL.format(**os.environ)
+#
+# if 'test' in sys.argv:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': ':memory:',
+#         }
+#     }
+# else:
+#     DATABASES = {
+#         'default': env.db('DJANGO_DATABASE_URL', default=DEFAULT_DATABASE_URL)
+#
+#     }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -100,6 +122,13 @@ TEMPLATES = [
 TEMPLATE_DEBUG = True
 
 WSGI_APPLICATION = 'Pinterest.wsgi.application'
+
+STATIC_URL = "static/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "Pinterest/static",
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
