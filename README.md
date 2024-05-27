@@ -179,6 +179,7 @@ Week 12:
 - Finalize project closure tasks
 - Celebrate successful project completion
 
-
-
-
+## Anti-Lab 2
+- Barvinskyi
+- [Project](https://github.com/VladBarvinskyi323/Barvinskyi.universitu.FitnessTracker)
+- [Fork](https://github.com/VladBarvinskyi323/Yatsiuk.University.Pinterest)
