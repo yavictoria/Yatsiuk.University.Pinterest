@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9a9d;
+        }
+
+        .header .search-bar {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            margin: 0 20px;
+        }
+
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        .header .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .actions .btn {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #ffb8dc, #ff9a9d);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .header .actions .btn:hover {
+            background: linear-gradient(to right, #ff9ccc, #ff7676);
+        }
+
+        .header .actions .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tile {
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .tile.small {
+            width: 200px;
+            height: 200px;
+        }
+
+        .tile.medium {
+            width: 300px;
+            height: 300px;
+        }
+
+        .tile.large {
+            width: 400px;
+            height: 400px;
+        }
+
+        .tile.rect-small {
+            width: 200px;
+            height: 150px;
+        }
+
+        .tile.rect-medium {
+            width: 300px;
+            height: 200px;
+        }
+
+        .tile.rect-large {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Inspira</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="actions">
+            <button class="btn">Створити</button>
+            <div class="profile"></div>
+        </div>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Tiles will be appended here by JavaScript -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("DOM fully loaded and parsed");
+
+            const images = [
+                '/Pinterest/static/images/image1.jpg',
+                '/Pinterest/static/images/image2.jpg',
+                '/Pinterest/static/images/image3.jpg',
+                '/Pinterest/static/images/image4.jpg',
+                '/Pinterest/static/images/image5.jpg',
+                '/Pinterest/static/images/image6.jpg',
+                '/Pinterest/static/images/image7.jpg',
+                '/Pinterest/static/images/image8.jpg',
+                '/Pinterest/static/images/image9.jpg',
+                '/Pinterest/static/images/image10.jpg',
+                '/Pinterest/static/images/image11.jpg',
+                '/Pinterest/static/images/image12.jpg',
+                '/Pinterest/static/images/image13.jpg',
+                '/Pinterest/static/images/image14.jpg',
+                '/Pinterest/static/images/image15.jpg'
+
+            ];
+
+            const mainContent = document.getElementById("main-content");
+
+            for (let i = 0; i < 20; i++) {
+                const tile = document.createElement("div");
+                const sizeClasses = ["small", "medium", "large", "rect-small", "rect-medium", "rect-large"];
+                const sizeClass = sizeClasses[Math.floor(Math.random() * sizeClasses.length)];
+                tile.className = `tile ${sizeClass}`;
+                const img = document.createElement("img");
+                img.src = images[Math.floor(Math.random() * images.length)];
+                tile.appendChild(img);
+                mainContent.appendChild(tile);
+            }
+
+            // Check if tiles are added correctly
+            const tiles = document.querySelectorAll(".tile");
+            console.log(`Total tiles added: ${tiles.length}`);
+        });
+    </script>
+</body>
+</html>
