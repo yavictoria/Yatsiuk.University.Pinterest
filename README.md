@@ -185,6 +185,10 @@ Week 12:
 - Finalize project closure tasks
 - Celebrate successful project completion
 
-
+## Anti-Lab 2
+- Name: Victoria Yatsiuk
+- Project: https://github.com/yavictoria/Yatsiuk.University.Pinterest
+- Fork 1: https://github.com/yavictoria/Baryliuk.University.OnlineBookClub
+- Fork 2: https://github.com/yavictoria/Barvinskyi.universitu.FitnessTracker
 
 
