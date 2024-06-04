@@ -180,7 +180,7 @@ Week 12:
 - Celebrate successful project completion
 
 
-### Anti_Lab2
+### Anti _Lab2
 - Kateryna Baryliuk
 - https://github.com/kkkkkkkkatya/Baryliuk.University.OnlineBookClub
 - https://github.com/kkkkkkkkatya/Yatsiuk.University.Pinterest/tree/initial_commit
