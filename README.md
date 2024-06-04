@@ -185,10 +185,13 @@ Week 12:
 - Finalize project closure tasks
 - Celebrate successful project completion
 
+## Anti-Lab 2
+- Barvinskyi
+- [Project](https://github.com/VladBarvinskyi323/Barvinskyi.universitu.FitnessTracker)
+- [Fork](https://github.com/VladBarvinskyi323/Yatsiuk.University.Pinterest)
+=======
 ### Anti _Lab2
 - Kateryna Baryliuk
 - https://github.com/kkkkkkkkatya/Baryliuk.University.OnlineBookClub
 - https://github.com/kkkkkkkkatya/Yatsiuk.University.Pinterest/tree/initial_commit
-
-
 
