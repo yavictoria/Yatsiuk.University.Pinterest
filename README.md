@@ -57,7 +57,9 @@ Technologies used:
 
   2. Navigate to the project directory:
 
-```cd inspira```
+```cd Yatsiuk.University.Pinterest-main```
+or
+```cd Yatsiuk.University.Pinterest-main/Pinterest```
 
   3. Create and activate a virtual environment (optional but recommended):
 
@@ -77,7 +79,11 @@ Technologies used:
 
 ```python manage.py createsuperuser```
 
-  7. Start the development server:
+  7. Collect all needed static
+
+```python manage.py collectstatic```
+
+  8. Start the development server:
 
 ```python manage.py runserver```
 
@@ -118,16 +124,16 @@ Week 3:
 
 Week 4:
 - Implement feature: Pinning Images/Videos
-- Integrate OAuth 2.0 authorization with Google account
+- Integrate OAuth 2.0 authorization with Google account ✔️
 - Set up Swagger UI for API documentation
 - Create Postman collection for testing endpoints
 - Write unit tests for pinning functionality
 
 Week 5:
-- Implement feature: Explore Feed
+- Implement feature: Explore Feed ✔️
 - Integrate open API for additional functionality
 - Configure additional Azure service (e.g., Storage Account)
-- Review and update README.md with getting started documentation
+- Review and update README.md with getting started documentation ✔️
 - Conduct initial round of user acceptance testing
 
 Week 6:
@@ -179,10 +185,10 @@ Week 12:
 - Finalize project closure tasks
 - Celebrate successful project completion
 
-
 ### Anti _Lab2
 - Kateryna Baryliuk
 - https://github.com/kkkkkkkkatya/Baryliuk.University.OnlineBookClub
 - https://github.com/kkkkkkkkatya/Yatsiuk.University.Pinterest/tree/initial_commit
+
 
 
