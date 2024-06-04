@@ -189,7 +189,7 @@ Week 12:
 - Barvinskyi
 - [Project](https://github.com/VladBarvinskyi323/Barvinskyi.universitu.FitnessTracker)
 - [Fork](https://github.com/VladBarvinskyi323/Yatsiuk.University.Pinterest)
-=======
+
 ### Anti _Lab2
 - Kateryna Baryliuk
 - https://github.com/kkkkkkkkatya/Baryliuk.University.OnlineBookClub
